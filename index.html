@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Resume</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile-photo" onmouseover="zoomProfilePhoto()" onmouseout="resetProfilePhoto()">
+        <img src="IMG_20240120_131459.jpg" alt="Profile Photo"  id="profile-image">
+        <h4 class="exclude-text" onmouseover="highlightName()" onmouseout="resetName()">SEPADA, ROMEO JR.</h4>
+      </div>
+
+      <hr class="exclude-line"><!-- Add a line here -->
+
+      <button onclick="showSection('home')">HOME</button>
+      <button onclick="showSection('contacts')">CONTACTS</button>
+      <button onclick="showSection('resume')">RESUME</button>
+      <button onclick="showSection('skills')">SKILLS</button>
+      <button onclick="showSection('education')">EDUCATION</button>
+      <button onclick="showSection('reports')">REPORTS</button>
+
+      <!-- Add more buttons for other sections -->
+    </div>
+
+    <div class="content">
+      <div class="sections">
+        <div id="home" class="section">
+          <hr class="big"><!-- Add a line here -->
+          <hr class="small"><!-- Add a line here -->
+
+          <h4 class="home-text" onmouseover="highlightName()" onmouseout="resetName()">Hello, I'm SEPADA, ROMEO JR.</h4>
+
+          <h5 class="custom-font">Hello, everyone! My name is Sepada, Romeo Jr. I come from the beautiful city of Toledo in Camp 8. Currently, I'm a student at CITE Technical Institute, Inc., where I am pursuing a course in Computer Engineering.
+
+           I have a sincere interest  about the world of technology and want to explore the exciting field of computer engineering. Being a student at CITE Technical Institute, Inc. has provided me with valuable knowledge, technical skills and values that I am eager to apply in real-world scenarios.</h5>
+
+        </div>
+        <div id="contacts" class="section">
+          <h2>Contact Information</h2>
+
+          <hr><!-- Add a line here -->
+
+          <i class="material-icons">home</i> Lower, Camp 8, Toledo City, Cebu <br>
+          <i class="material-icons">phone</i> +63 912 021 1625 <br>
+          <i class="material-icons">email</i> romeojrsepada2002@gmail.com
+        </div>
+
+
+        <div id="resume" class="section">
+          <h2>Resume</h2>
+
+          <hr><!-- Add a line here -->
+
+          <div class="report-card" id="resumeCard">
+           <h3>Resume</h3>
+            <ul>
+              <li>
+                 <a id="resumeLink" href="#" target="_blank">Resume</a>
+                <button onclick="downloadPDF()">Download PDF</button>
+            </li>
+           </ul>
+          </div>
+
+          
+        </div>
+
+
+
+
+        <div id="skills" class="section">
+          <h2>Skills</h2>
+          <hr><!-- Add a line here -->
+
+          <ul>
+            <img src="icons8-html-logo-48.png" alt="HTML Logo">
+            <img src="icons8-css-logo-48.png" alt="CSS Logo">
+            <img src="icons8-c++-48.png" alt="C++ Logo">
+            <img src="icons8-batch-script-48.png" alt="Batch Script Logo">
+          </ul>
+
+          <h2>Core Competencies</h2>
+          <hr><!-- Add a line here -->
+          <ul>
+            <li>
+              <p>Working knowledge in MS Word, Excel, Powerpoint.</p>
+            </li>
+            <li>
+              <p>Design webpage and other similar graphics and multimedia applications such as Adobe Photoshop.</p>
+            </li>
+          </ul>
+        </div>
+        <div id="education" class="section">
+          <h2>Education</h2>
+          <hr><!-- Add a line here -->
+          <p><strong>CITE Technical Institute, Inc. (San Jose, Cebu City)</strong></p>
+          <ul>
+            <li>
+              <p>Diploma in Computer Engineering Technology (July 2021 - present)</p>
+            </li>
+          </ul>
+          <h2>Training</h2>
+          <hr><!-- Add a line here -->
+          <ul>
+            <li>
+              <p>Competent in Computer System Servicing NC II (Sept, 2022)</p>
+            </li>
+            <li>
+              <p>Competent in Electronics Product Assembly and Servicing NC II (Oct, 2022)</p>
+            </li>
+          </ul>
+          <h2>Seminars Attended</h2>
+          <hr><!-- Add a line here -->
+          <ul>
+            <li>
+              <a href="Practicing COVID-19 Preventive Measures in the Workplace_Certificate of Completion.pdf" target="_blank">
+                Practicing COVID-19 Preventive Measures in the Workplace via Zoom Conference (Jun, 2021)
+                </a>
+            </li>
+            <li>
+              <p>Fire prevention and Rescue Operation at CITE Technical Institute, Inc. (Nov, 2022)</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="reports" class="section">
+  <h2>Reports</h2>
+  <hr><!-- Add a line here -->
+
+  <!-- Daily Attendance Report Card -->
+  <div class="report-card" id="dailyAttendanceCard">
+    <h3>Daily Attendance Summary</h3>
+    <ul>
+      <li>
+        <a id="pdfLink" href="#" target="_blank">Daily Attendance Summary</a>
+        <button onclick="downloadPDF()">Download PDF</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Accomplishments Report Card -->
+  <div class="report-card" id="accomplishmentsCard">
+    <h3>Accomplishments Report</h3>
+    <ul>
+      <li>
+        <a id="accomplishmentsPdfLink" href="#" target="_blank">Accomplishments Report</a>
+        <button onclick="downloadAccomplishmentsPDF()">Download PDF</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+          
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
